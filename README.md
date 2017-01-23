@@ -13,4 +13,5 @@ Jenkins Pipeline for rb project, https://github.com/timohanke/rb.
     mkdir .ssh
 ```
 3. Add Jenkins to Docker group
+
    http://stackoverflow.com/questions/38105308/jenkins-cant-connect-to-docker-daemon#38109447
