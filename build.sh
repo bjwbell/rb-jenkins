@@ -21,8 +21,9 @@ export GOROOT=$(pwd)/go
 export GOPATH=$(pwd)
 
 # build
-cd path/to/your/project
-go build
+git clone https://github.com/timohanke/rb
+cd rb
+docker run --rm -it -v `pwd`/go:/go dfinity/build-env go run sim.go
 if [ $? -ne 0 ];
 then
     echo "fail to go build"
