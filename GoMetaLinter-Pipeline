@@ -1,0 +1,12 @@
+node {
+   // Mark the code checkout 'stage'....
+   stage 'Checkout'
+
+   // Get code from GitHub repository
+   git url: 'https://github.com/timohanke/rb'
+
+   // Mark the code build 'stage'....
+   stage 'Build'
+   // Run gometalinter
+   sh "./runlinters.sh"
+}
